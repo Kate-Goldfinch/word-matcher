@@ -1,0 +1,119 @@
+body {
+  background: rgb(170, 217, 255);
+  font-family: Roboto, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+h1 {
+  letter-spacing: -20px;
+}
+span {
+  display: inline-flex;
+  border: 2px solid rgb(100, 95, 95);
+  padding: 10px;
+  letter-spacing: -1px;
+  background: rgba(255, 254, 243, 0.986);
+  font-family: Times, serif;
+  font-weight: 700;
+}
+span:nth-of-type(odd) {
+  transform: rotate(-5deg);
+}
+span:nth-of-type(4n + 2) {
+  transform: rotate(4deg);
+}
+span:nth-of-type(2n + 1) {
+  font-size: 2.2em;
+}
+span:nth-of-type(3n + 3) {
+  font-size: 1.6em;
+}
+#container {
+  width: 700px;
+  margin: 0 auto;
+}
+
+label {
+  font-size: 1.2rem;
+  letter-spacing: 2.7px;
+}
+input {
+  width: 700px;
+  height: 100px;
+  margin: 10px auto;
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: 10px;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+.btn-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+button {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #fd7535;
+  padding: 20px;
+  font-weight: 100;
+  font-size: 1.5em;
+  border-radius: 5px;
+  display: inline-block;
+  border: none;
+  transition: background 0.3s ease 0s;
+  margin: 10px auto;
+}
+button:hover {
+  background: #d1541b;
+}
+
+button.active {
+  border: 2px solid black;
+}
+
+button.inactive {
+  background: #eea482;
+  color: azure;
+}
+
+#content {
+  background: white;
+  width: 700px;
+}
+
+#content.active {
+  height: 300px;
+  overflow-y: auto;
+}
+
+ul {
+  columns: 3;
+  column-fill: auto;
+  list-style: none;
+  margin: 0;
+  padding-top: 0;
+}
+
+li {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 100;
+  margin: 0;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+
+li:hover {
+  background: rgb(170, 217, 255);
+}
+
+#message {
+  padding-left: 10px;
+  color: red;
+  font-size: 1.2rem;
+}
